@@ -241,7 +241,7 @@ main #testimonials {
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    padding-block: 80px 50px;
+    padding-block: 80px 100px;
 }
 
 main #testimonials h2 {
@@ -262,7 +262,7 @@ main #testimonials .testimonals-grid .testimonal-box {
     border-radius: 30px;
 }
 
-main #testimonials .testimonals-grid .testimonal-box figure {
+main .pfp {
     overflow: hidden;
     width: 25%;
     aspect-ratio: 1;
@@ -339,6 +339,57 @@ main .cta-grid .cta-box a {
     padding: 5px 35px;
 }
 
+main #about-us {
+    padding-inline: 16%;
+    padding-block: 80px;
+    display: flex;
+    gap: 10%;
+}
+
+main #about-us div:first-child {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main #about-us div:first-child h1 {
+    color: var(--lilac-color);
+}
+
+main #about-us div:nth-child(2) {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main #about-us div:nth-child(2) #about-us-model {
+    width: 100%;
+    background-image: url(../img/about.jpg);
+    overflow: visible;
+    position: relative;
+}
+
+main #about-us div:nth-child(2) #about-us-model i {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: var(--lilac-color);
+    font-size: 350%;
+}
+
+main #about-us div:nth-child(2) h2 {
+    color: var(--lilac-color);
+}
+
+.icon.linkedin::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f08c";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 930px) {
 
     .content {
@@ -384,5 +435,17 @@ main .cta-grid .cta-box a {
 
     main .cta-grid .cta-box {
         flex-basis: calc((100% / 2) - (40px / 2));
+    }
+
+    main #about-us {
+        padding-inline: 4%;
+    }
+
+    main #about-us div:first-child {
+        flex-basis: 70%;
+    }
+
+    main #about-us div:nth-child(2) {
+        flex-basis: 30%;
     }
 }
