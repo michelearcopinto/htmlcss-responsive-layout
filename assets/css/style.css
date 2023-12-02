@@ -16,3 +16,98 @@ html {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
+
+img,
+svg {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    /* Colors */
+    --blue-color: #0084FD;
+    --azure-color: #B5DDFF;
+    --lilac-color: #9792E4;
+    --ocher-color: #FDC15F;
+    --anthracite-color: #333333;
+
+    /* Shadow */
+    --shadow: 13px 24px 64px -25px rgba(0, 0, 0, 0.75);
+}
+
+.content {
+    padding-inline: 12.5%;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--blue-color);
+    box-shadow: var(--shadow);
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    line-height: 60px;
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+header nav ul li:last-child:hover {
+    border-bottom: none;
+}
+
+.button {
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.white {
+    color: black;
+    background-color: white;
+}
+
+.blue {
+    color: white;
+    background-color: var(--blue-color);
+}
+
+header article {
+    height: 1000px;
+    margin-top: 60px;
+    border: 1px solid red;
+}
+
+header article .cta-grid {
+    display: ;
+}
+
+.icon.apple::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f179";
+    font-weight: 900;
+    margin-right: 10px;
+}
