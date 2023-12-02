@@ -441,6 +441,10 @@ footer a {
     }
 
     /* Header */
+    header {
+        position: relative;
+    }
+
     header nav {
         height: 60px;
     }
@@ -452,6 +456,23 @@ footer a {
     #hamburger-menu {
         display: inline-block;
         color: white;
+    }
+
+    #hamburger-menu:hover+ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: -180px;
+        right: 0px;
+        background-color: var(--blue-color);
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: var(--shadow);
+    }
+
+    #hamburger-menu:hover+ul li {
+        line-height: 18px;
     }
 
     header article .cta-grid .cta-box#first-cta-box {
