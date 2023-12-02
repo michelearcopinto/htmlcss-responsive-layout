@@ -89,6 +89,7 @@ header nav ul li:last-child:hover {
 }
 
 .button {
+    /* letter-spacing: 2px; */
     padding: 5px 15px;
     border-radius: 30px;
     width: fit-content;
@@ -159,7 +160,6 @@ header article .cta-grid .cta-box#first-cta-box div {
 }
 
 header article .cta-grid .cta-box#first-cta-box div a {
-    letter-spacing: 3px;
     padding-inline: 30px;
 }
 
@@ -263,7 +263,6 @@ main #testimonials .testimonals-grid .testimonal-box {
 }
 
 main .pfp {
-    overflow: hidden;
     width: 25%;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -335,7 +334,6 @@ main .cta-grid .cta-box h3 {
 }
 
 main .cta-grid .cta-box a {
-    letter-spacing: 2px;
     padding: 5px 35px;
 }
 
@@ -347,7 +345,7 @@ main #about-us {
 }
 
 main #about-us div:first-child {
-    flex-basis: 80%;
+    flex-basis: 75%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -358,7 +356,7 @@ main #about-us div:first-child h1 {
 }
 
 main #about-us div:nth-child(2) {
-    flex-basis: 20%;
+    flex-basis: 25%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -367,7 +365,6 @@ main #about-us div:nth-child(2) {
 main #about-us div:nth-child(2) #about-us-model {
     width: 100%;
     background-image: url(../img/about.jpg);
-    overflow: visible;
     position: relative;
 }
 
@@ -389,6 +386,53 @@ main #about-us div:nth-child(2) h2 {
     font-weight: 900;
     margin-right: 10px;
 }
+
+main #get-started {
+    color: white;
+    text-align: center;
+    padding-block: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+main #get-started span:first-child {
+    opacity: 0.5;
+}
+
+main #get-started h1 {
+    color: var(--ocher-color);
+}
+
+main #get-started>a {
+    color: var(--lilac-color);
+    padding: 15px 50px;
+}
+
+main #get-started span:last-child a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer {
+    color: white;
+    background-color: var(--anthracite-color);
+    text-align: center;
+    padding-block: 40px;
+    gap: 50px;
+}
+
+footer p {
+    margin-bottom: 50px;
+}
+
+footer a {
+    color: var(--lilac-color);
+    text-decoration: underline;
+}
+
+
 
 @media screen and (max-width: 930px) {
 
@@ -447,5 +491,75 @@ main #about-us div:nth-child(2) h2 {
 
     main #about-us div:nth-child(2) {
         flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .content {
+        padding-inline: 10%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+        color: white;
+    }
+
+    header article .cta-grid .first-row,
+    header article .cta-grid .second-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta-grid .cta-box {
+        flex-basis: 100%;
+    }
+
+    header article .cta-grid .cta-box#first-cta-box {
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+
+    header article .cta-grid .cta-box#first-cta-box figure img {
+        margin: auto;
+    }
+
+    header article .cta-grid .first-row .cta-box:nth-child(2) {
+        justify-content: center;
+    }
+
+    /* Main */
+    main #planning {
+        padding-inline: 10%;
+    }
+
+    main #testimonials .testimonals-grid .testimonal-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    main #testimonials .testimonals-grid .testimonal-box div {
+        text-align: center;
+    }
+
+    main #testimonials .testimonals-grid .testimonal-box figure {
+        width: 50%;
+    }
+
+    main .cta-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main #about-us {
+        padding-inline: 10%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    main #about-us div:nth-child(2) #about-us-model {
+        width: 40%;
     }
 }
