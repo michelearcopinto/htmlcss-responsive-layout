@@ -349,6 +349,10 @@ main .cta-grid .cta-box h3 {
     color: var(--lilac-color);
 }
 
+main .cta-grid .cta-box p {
+    color: gray;
+}
+
 main .cta-grid .cta-box a {
     padding: 5px 35px;
 }
